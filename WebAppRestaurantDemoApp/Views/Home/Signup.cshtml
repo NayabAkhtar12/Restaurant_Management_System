@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+    Layout = "~/Views/Shared/_LayoutSignup.cshtml";
+
+}
+
+<h2>Signup Form</h2>
+
+<div class="login">
+    <!-- form starts here -->
+    <form action="#" method="post">
+        <div class="field-txt">
+            <label><i class="fa fa-user" aria-hidden="true"></i> Username </label>
+            <input type="text" name="Username" placeholder="Enter User Name" required="" />
+        </div>
+        <div class="field-txt">
+            <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> password </label>
+            <input type="password" name="password" placeholder="Enter Password" required="" id="myInput" />
+            <div class="Llabel">
+                <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                <label class="check" for="check3">Show password</label>
+            </div>
+            <div class="field-txt">
+                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i>Repeat password </label>
+                <input type="password" name="Repeat_password" placeholder="Enter Password" required="" id="myInput" />
+                <div class="Llabel">
+                    <input id="check3" name="check4" type="checkbox" value="show password" onclick="myFunction()">
+                    <label class="check" for="check4">Show password</label>
+                </div>
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            </div>
+            <!-- script for show password -->
+            <script>
+function myFunction() {
+                    var x = document.getElementById("myInput");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+}
+            </script>
+            <!-- //end script -->
+            <input type="submit" value="Singup">
+    </form>
+</div>
+<!-- //form ends here -->

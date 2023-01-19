@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace WebAppRestaurantDemoApp.Models
+{
+    public class SignupModel
+    {
+        public string Username { get; set; }
+        public string password { get; set; }
+        public string Repeat_password { get; set; }
+    }
+}
